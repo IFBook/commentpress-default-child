@@ -31,10 +31,6 @@ Fonts
 --------------------------------------------------------------------------------
 */
 
-/* import the custom fonts from our font-squirrel archive */
-@import url("../fonts/cabin-fontfacekit/stylesheet.css");
-@import url("../fonts/eb-garamond-fontfacekit/stylesheet.css");
-
 /* Cabin */
 #title h1,
 #title h1 a,
@@ -66,7 +62,7 @@ span.highlight,
 .item-title a,
 div#message-thread strong a
 {
-	font-family: 'CabinRegular', Arial, sans-serif;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
 }
 
 body.registration #content h4, 
@@ -84,14 +80,14 @@ body#main_blog div#item-header div#item-actions h3,
 /* BuddyPress Group Email Subscription compatibility */
 h3.activity-subscription-settings-title
 {
-	font-family: 'CabinRegular', Arial, sans-serif;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
 }
 
-/* Garamond */
+/* Courier New */
 #book_header #tagline,
 body#main_blog div#item-header div#item-meta 
 {
-	font-family: 'EBGaramondRegular', Times, serif;
+	font-family: 'Courier New', Times, serif;
 }
 
 
