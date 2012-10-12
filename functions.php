@@ -140,10 +140,15 @@ function cpchild_enqueue_styles() {
 	}
 	
 	// add Commentpress Theme css file
-	wp_enqueue_style( 'cpchild_parent_css', get_template_directory_uri() . '/style.css' );
+	//wp_enqueue_style( 'cpchild_parent_css', get_template_directory_uri() . '/style.css' );
 
 	// add child theme's css file
-	wp_enqueue_style( 'cpchild_css', get_stylesheet_directory_uri() . '/assets/css/style-overrides'.$dev.'.css' );
+	wp_enqueue_style( 
+	
+		'cpchild_css', 
+		get_stylesheet_directory_uri() . '/assets/css/style-overrides'.$dev.'.css' 
+		
+	);
 
 }
 
