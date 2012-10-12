@@ -9,4 +9,7 @@ Author: Christian Wach
 Author URI: http://www.haystack.co.uk
 */
 
+/* import parent css */
+@import url("../commentpress/style.css");
+
 /* deliberately empty: see `assets/css` for stylesheets */
