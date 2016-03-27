@@ -36,10 +36,10 @@ function cpchild_setup() {
 	/**
 	 * Make theme available for translation.
 	 *
-	 * Translations can be added to the /languages/ directory of the child theme.
+	 * Translations can be added to the /languages directory of the child theme.
 	 */
 	load_theme_textdomain(
-		'commentpress-child-theme',
+		'commentpress-default-child',
 		get_stylesheet_directory() . '/languages'
 	);
 
