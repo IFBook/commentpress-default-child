@@ -22,7 +22,7 @@ Example theme amendments and overrides.
  * I have arbitrarily set it to the default content-width when viewing on a
  * 1280px-wide screen.
  */
-if ( !isset( $content_width ) ) { $content_width = 586; }
+if ( !isset( $content_width ) ) { $content_width = 588; }
 
 
 
