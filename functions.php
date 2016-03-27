@@ -77,7 +77,7 @@ function cpchild_enqueue_styles() {
 	
 		'cpchild_css', 
 		get_stylesheet_directory_uri() . '/assets/css/style-overrides'.$dev.'.css',
-		array( 'cp_reset_css' ),
+		array( 'cp_layout_css' ),
 		'1.0', // version
 		'all' // media
 	
