@@ -31,7 +31,7 @@ if ( !isset( $content_width ) ) { $content_width = 588; }
  *
  * @since 3.4
  */
-function cpchild_setup() {
+function commentpress_default_child_setup() {
 
 	/**
 	 * Make theme available for translation.
@@ -46,7 +46,7 @@ function cpchild_setup() {
 }
 
 // add after theme setup hook
-add_action( 'after_setup_theme', 'cpchild_setup' );
+add_action( 'after_setup_theme', 'commentpress_default_child_setup' );
 
 
 
@@ -55,7 +55,7 @@ add_action( 'after_setup_theme', 'cpchild_setup' );
  *
  * @since 3.4
  */
-function cpchild_enqueue_styles() {
+function commentpress_default_child_enqueue_styles() {
 
 	// init
 	$dev = '';
@@ -77,7 +77,7 @@ function cpchild_enqueue_styles() {
 }
 
 // add a filter for the above
-add_filter( 'wp_enqueue_scripts', 'cpchild_enqueue_styles', 110 );
+add_filter( 'wp_enqueue_scripts', 'commentpress_default_child_enqueue_styles', 110 );
 
 
 
@@ -86,7 +86,7 @@ add_filter( 'wp_enqueue_scripts', 'cpchild_enqueue_styles', 110 );
  *
  * @since 3.4
  */
-function cpchild_sidebar_tab_order( $order ) {
+function commentpress_default_child_sidebar_tab_order( $order ) {
 
 	// ignore what's sent to us and set our own order here
 	$order = array( 'comments', 'activity', 'contents' );
@@ -97,7 +97,7 @@ function cpchild_sidebar_tab_order( $order ) {
 }
 
 // uncomment the line below to enable the order defined above
-//add_filter( 'cp_sidebar_tab_order', 'cpchild_sidebar_tab_order', 21, 1 );
+//add_filter( 'cp_sidebar_tab_order', 'commentpress_default_child_sidebar_tab_order', 21, 1 );
 
 
 
